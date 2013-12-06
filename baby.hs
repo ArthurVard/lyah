@@ -18,3 +18,4 @@ collatzSeq n = n: (collatzSeq (nextElem n))
 
 
 chainsGreater15 = length . filter (\xs->length xs > 15) $ map  collatzSeq [1..100]
+
